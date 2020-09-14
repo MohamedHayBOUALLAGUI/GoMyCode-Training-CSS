@@ -1,0 +1,313 @@
+* {
+  font-family: roboto;
+  box-sizing: border-box;
+}
+body {
+  background: url("../res/1_WsCbTb1pZx1J4Ki3wC0Kgg.jpeg") no-repeat fixed 50%
+    50% #fff;
+  background-size: cover;
+}
+p {
+  margin: auto 30px;
+  font-size: larger;
+}
+header h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 80px;
+  text-decoration: underline;
+  color: blue;
+}
+/*CSS for navmenu*/
+.navmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navmenu li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #08455d;
+  border: 2px solid rgb(158, 145, 194);
+  border-radius: 5px 15px;
+  box-shadow: 4px 4px 6px rgb(158, 145, 194);
+  text-shadow: 3px 3px 4px #08455d;
+}
+.navmenu li a:hover {
+  font-size: larger;
+  border: 3px solid yellowgreen;
+  box-shadow: 4px 4px 6px yellowgreen;
+  color: yellowgreen;
+}
+.navmenu li {
+  display: inline;
+}
+
+/*CSS for section home*/
+h2 {
+  font-size: x-large;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #08455d;
+  border: 2px solid rgb(158, 145, 194);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(158, 145, 194);
+  text-align: center;
+  margin: 20px 30px 15px;
+}
+.motivation {
+  margin: auto 30px;
+  text-align: center;
+}
+.motivation table:nth-of-type(odd) {
+  font-size: larger;
+  font-weight: bold;
+
+  color: #08455d;
+  text-shadow: 3px 3px 4px #08455d, 6px 6px 4px #788150, 7px 7px 4px #cbf70a;
+}
+.motivation img {
+  border: 2px solid rgb(158, 145, 194);
+  border-radius: 5px;
+  box-shadow: -3px 3px 5px rgb(120, 98, 150), -7px 7px 5px rgb(223, 207, 243);
+}
+
+/*CSS for section about me*/
+#aboutme h3:nth-child(2) {
+  font-size: larger;
+  text-align: center;
+  color: rgb(88, 88, 88);
+}
+
+#presentation img {
+  width: 250px;
+  height: 350px;
+  padding: 2px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #535151;
+  box-shadow: 7px 7px 20px #e4e4e4, -7px -7px 20px #e4e4e4;
+  display: block;
+  margin: auto auto 20px;
+}
+
+/*aboutme-->Personal details */
+
+.perso_details {
+  margin: auto 30px;
+  color: rgb(57, 7, 114);
+  font-size: larger;
+  font-weight: bolder;
+}
+#info-perso tr td:first-child {
+  color: #10035a;
+}
+#info-perso tr td:last-child {
+  color: #2f0bf7;
+  text-decoration: none;
+}
+#info-perso tr td:last-child a {
+  text-decoration: none;
+}
+#info-perso tr td:last-child a:hover {
+  color: rgb(209, 23, 23);
+  text-decoration: underline;
+}
+/*aboutme-->Computer skills */
+.pc-skills {
+  margin: auto 30px;
+  color: rgb(57, 7, 114);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+/*aboutme-->Language skills */
+
+.skills,
+.perso_details {
+  margin: auto 30px;
+  color: rgb(57, 7, 114);
+  font-size: larger;
+}
+
+.skills li {
+  list-style-type: none;
+}
+.gauge {
+  background: #353b48;
+  display: block;
+  height: 12px;
+  width: 450px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  box-shadow: 0 0 40px #2187e7b3;
+  overflow: hidden;
+}
+.gauge span {
+  height: 12px;
+  background: #2187e7;
+  display: flex;
+  justify-content: left;
+}
+.arabic {
+  width: 100%;
+}
+.frensh {
+  width: 70%;
+}
+.english {
+  width: 60%;
+}
+.german {
+  width: 25%;
+}
+.spanish {
+  width: 15%;
+}
+/*CSS for section resume*/
+.gmc a, .ensit a, .ipeit a, .lycee{
+  text-decoration: none;
+  font-weight:bold;
+  color:rgb(61, 3, 61);
+
+}
+.gmc a:hover, .ensit a:hover, .ipeit a:hover{
+  text-decoration: underline;
+  font-size:larger;
+  color:rgb(189, 23, 17);
+
+} 
+
+/*CSS for section work*/
+#work ul {
+  margin: 15px 30px 30px;
+  font-size: larger;
+  font-family: Roboto;
+  list-style: circle inside none;
+}
+
+#work div p:nth-last-child(2) {
+  font-weight: bold;
+  text-align: center;
+}
+iframe {
+  display: block;
+
+  margin: auto ;
+}
+
+
+/*CSS for section contact*/
+
+#contact {
+  color: rgb(57, 7, 114);
+  font-size: larger;
+  font-weight: bolder;
+}
+.contactme table {
+  margin: 15px auto 35px;
+}
+.contactme h3 {
+  text-align: center;
+}
+.contactme table tr:first-child ~ tr td:first-child {
+  color: #142f88;
+}
+.contactme table tr:first-child ~ tr td:last-child input,
+textarea {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  box-shadow: 4 4 8px #2187e7b3;
+  overflow: auto;
+  background-color: rgb(228, 228, 192);
+}
+.contactme table tr:last-child td:last-child button {
+  padding: 1px;
+  width: 80px;
+  height: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px #2187e7b3;
+  background-color: rgb(197, 197, 5);
+  color: rgb(55, 0, 255);
+  font-weight: bold;
+}
+
+.contactme table tr:last-child td:last-child button:first-child:hover {
+color:black;
+border: 2px solid black;
+box-shadow: 4px 4px 6px black;
+}
+.contactme table tr:last-child td:last-child button:last-child:hover{
+  color:red;
+
+border: 2px solid red;
+box-shadow: 4px 4px 6px red;
+}
+
+
+audio {
+  display: block;
+  margin: 15px auto;
+}
+
+.music {
+  margin: 15px auto 35px;
+  text-align: center;
+}
+.music p~p {
+ color: rgb(20, 128, 117);
+}
+
+.music p span {
+  color: whitesmoke;
+ }
+
+
+ /*CSS for footer*/
+.socialmedia{
+
+  margin:auto;
+}
+
+.socialmedia table tr:first-child{
+  color:yellow;
+  font-size: xx-large;
+  font-weight:bolder;
+
+
+}
+.go-top{
+  margin: auto auto auto 30px;
+}
+.go-top a{
+  text-decoration:none;
+  border: 2px solid rgb(158, 145, 194);
+  border-radius: 5px 15px;
+  box-shadow: 4px 4px 6px rgb(158, 145, 194);
+  text-shadow: 3px 3px 4px #08455d;
+
+}
+
+.go-top a:hover{
+
+  font-size: larger;
+  border: 3px solid rgb(7, 117, 3);
+  box-shadow: 4px 4px 6px rgb(7, 117, 3);
+  color: rgb(7, 117, 3);
+
+}
+
+.reserved{
+  
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  margin:15px auto auto;
+  color:rgb(248, 6, 6);
+}
