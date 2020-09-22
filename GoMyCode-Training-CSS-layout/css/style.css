@@ -1,0 +1,446 @@
+body {
+  margin: auto;
+  color: #747474;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+*::selection {
+  background: #00b39b;
+  color: white;
+}
+
+.introduction,
+.services {
+  margin: auto;
+  width: 995px;
+}
+
+/******************Css for header*********************/
+
+.head_menu_container {
+  width: 100%;
+  height: 80px;
+
+  position: fixed;
+
+  background: hsla(0, 0%, 100%, 0.98);
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+.head_menu {
+  width: 995px;
+  margin: auto;
+  height: 80px;
+  position: relative;
+}
+
+.head_menu .logo_docplanner {
+  width: 250px;
+  height: 80px;
+}
+
+.navmenu_list {
+  list-style-type: none;
+  display: flex;
+  
+  position: relative;
+}
+.navmenu_list li {
+  margin: auto 15px;
+  padding: 15px 5px;
+}
+.navmenu_list a {
+  text-decoration: none;
+  color: #747474;
+}
+.navmenu_list a:hover {
+  text-decoration: none;
+  color: #00b39b;
+}
+
+.navmenu_list a:focus {
+  text-decoration: none;
+  color: #00b39b;
+}
+.navmenu_list li:nth-child(3):hover{
+  color: #00b39b;
+  cursor: pointer;
+}
+
+.downmenu {
+  display: none;
+
+  flex-direction: column;
+  width: 240px;
+  list-style: none;
+  background: #fff;
+  margin-top: 10px;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  padding-left: 0;
+border: none;
+  box-shadow:1px 1px 5px rgba(0, 0, 0, 0.13),
+  -1px -1px 5px rgba(0, 0, 0, 0.13), 
+ 4px 4px 5px rgba(0, 0, 0, 0.1),
+  -4px -4px 5px rgba(0, 0, 0, 0.1);
+}
+.navmenu_list li:nth-child(3):hover .downmenu{
+  display: flex;
+  
+}
+ .downmenu a:hover {
+  background:#d7f6f649;
+  
+}
+
+
+/********************CSS for main global_section******/
+
+
+/********************CSS for introduction_section******/
+
+.introduction_content {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.introduction_content div {
+  display: flex;
+}
+.introduction_content h1 {
+  font-size: 34px;
+  font-weight: lighter;
+  color: #00b39b;
+}
+.intro_paragraph {
+  line-height: 1.75;
+  padding: 10px;
+  font-size: medium;
+}
+.introduction_content div p:nth-child(2) {
+  padding-left: 20px;
+}
+.introduction_content div p:first-child {
+  padding-left: 5px;
+  margin-right: 13px;
+}
+
+.head_menu {
+  display: flex;
+  justify-content: space-between;
+}
+/************CSS for cards in services_section******/
+
+.patients_card {
+  border: 2px solid red;
+  width: 497.5px;
+  height: 412.73px;
+  position: relative;
+  margin: auto 10px;
+  overflow: hidden;
+}
+.doctors_card {
+  border: 2px solid red;
+  width: 497.5px;
+  height: 411.99px;
+  position: relative;
+  margin: auto 10px;
+  overflow: hidden;
+}
+.image_patientcard {
+  position: absolute;
+  width: 397.5px;
+  height: 248.75px;
+  bottom: 0;
+  left: 200px;
+}
+
+.card_services {
+  display: flex;
+  width: 995px;
+  height: 412.73px;
+}
+.docplanner_websites {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.docplanner_websites_logos {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 3;
+}
+.docplanner_websites_logos li {
+  list-style: none;
+}
+
+.services svg {
+  fill: #abababb3;
+  width: 140px;
+  height: auto;
+}
+.services svg:hover {
+  fill: #3d83df;
+  cursor: pointer;
+}
+.card_services {
+  display: flex;
+  justify-content: space-between;
+  color: #e0ffff;
+}
+
+.patients_card {
+  width: 477.5px;
+  height: 391.75;
+  padding-left: 30px;
+  padding-top: 10px;
+  color: #e0ffff;
+
+  background: #00ccb1;
+  border-radius: 10px;
+  border: none;
+}
+.patients_card p {
+  color: #b3ead2;
+  font-weight: lighter;
+}
+.doctors_card p {
+  color: #c5daf5;
+  font-weight: lighter;
+}
+.patients_card h1 {
+  font-weight: lighter;
+}
+.doctors_card h1 {
+  font-weight: lighter;
+}
+.doctors_card {
+  width: 477.5px;
+  height: 391.75;
+  padding-left: 30px;
+  padding-top: 10px;
+
+  background: #3d83df;
+  border-radius: 10px;
+  border: none;
+}
+.docplanner_websites h2 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+/***CSS for select-countries in patients card***/
+.box_select {
+  border: none;
+  width: 160px;
+  margin-top: 45px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.box_select select {
+  border: 0px;
+  outline: 0px;
+  padding: 10px;
+  height: 40px;
+
+  border-radius: 5px 0 0 5px;
+  font-weight: bold;
+  font-size: 12px;
+  appearance: none;
+}
+.box_select i {
+  color: #00ccb1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: smaller;
+}
+
+.box_select:hover,
+select:hover {
+  background: #d6f3ef;
+}
+
+.box_select {
+  position: relative;
+  display: flex;
+  background: #ffffff;
+}
+
+
+/************CSS for docplanner_platforms_section******/
+
+
+/*statics platform*/
+
+.docplanner_statistics {
+  width: 200px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  padding: 15px;
+  padding-top: 35px;
+  background: #ffffff;
+  border: none;
+  border-radius: 6px;
+}
+.flag {
+  transform: translateY(45px);
+  margin-bottom: 20px;
+}
+.patients {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.visits {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.doctors {
+  margin-bottom: 45px;
+}
+.plaform_intro {
+  width: 800px;
+  height: 200.78px;
+  margin-top: 80px;
+}
+.plaform_intro h1 {
+  font-size: xx-large;
+  font-weight: lighter;
+}
+.doc_stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.docplanner_platforms {
+  background: #d7f6f6;
+  width: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+.stats_platforms_container {
+  width: 995px;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.docplanner_statistics h2 {
+  font-weight: lighter;
+}
+.docplanner_statistics p {
+  font-size: small;
+  line-height: 1.5;
+}
+.logo_background img {
+  position: absolute;
+  bottom: -120px;
+  left: -140px;
+}
+
+/****countries****/
+
+.countries_intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 50px auto;
+
+  text-align: center;
+}
+.countries_intro h1 {
+  font-size: 30px;
+  font-weight: lighter;
+  color: #00b3b1;
+}
+
+.countries_intro p {
+  color: #747474;
+  line-height: 1.5;
+}
+
+.countries_cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 10%;
+  justify-content: space-evenly;
+}
+.country_card {
+  margin-bottom: 2%;
+  border-radius: 5px;
+  border: 0.3px solid rgba(0, 0, 0, 0.04);
+}
+.country_card img {
+  border-radius: 5px 5px 0 0;
+}
+.country_card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6%;
+  display: flex;
+  border-radius: 0 0 7px 7px;
+}
+.country_card button {
+  text-transform: uppercase;
+  background: #3d83df;
+  font-weight: bold;
+  font-size: xx-small;
+  letter-spacing: 0.3px;
+  width: 120px;
+  height: 30px;
+  padding: auto 15px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+.country_card:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1),
+    -2px -2px 10px rgba(0, 0, 0, 0.1), 18px 18px 10px rgba(0, 0, 0, 0.05),
+    -18px -18px 10px rgba(0, 0, 0, 0.05);
+}
+
+.country_card button:hover {
+  cursor: pointer;
+}
+
+/*******CSS for footer_principal_section*****/
+
+footer {
+  width: 995px;
+  margin: 60px auto auto;
+  font-size: 12px;
+  color: #ababab;
+}
+
+.footer_countries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_countries p a {
+  color: #61b8f8;
+  text-decoration: none;
+}
+.footer_countries p a:hover {
+  text-decoration: underline;
+}
+.footer_countries p:nth-child(2) {
+  margin-bottom: 2px;
+}
+.footer_countries p:nth-child(3) {
+  margin-top: 2px;
+}
